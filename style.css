@@ -139,41 +139,61 @@ img
 
 .slikaDiv
 {
-    width: 100%;
-    text-align:center; 
-    display: inline-block;
     white-space:nowrap;
-    background-size:cover;
     background-repeat: no-repeat;
-}
+    background-size: contain;
+} /* display: inline-block;  fali jer mi nije trebao*/
 
 .pozadinaDiv
 {
     width: 100%;
-    height: 1000px;
+    height: 2000px;
     text-align:center; 
     display: inline-block;
     white-space:nowrap;
     background-size:cover;
-    background-color: rgb(21, 25, 35);
+    background-color: rgb(84, 119, 185);
 }
 
-.malaSlika{
-    height: 300px;
+.ispod
+{
+    filter: blur(5px);
+    z-index: -1;
+}
+
+.iznad
+{
+    position: absolute;
+    display: block;
+    top:100px;
+    margin: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    /*
+    margin-left: 15%;*/
 }
 
 .boja1{
-    background-color: indianred;
+    background-color: cornflowerblue;
+}
+.boja2{
+    background-color: rgb(197, 115, 115);
 }
 
 .slika1{
     background-image: url("slike/salon.jpg");
-    background-size: contain;
     height: 600px;
 
 }
 .slika2{
     background-image: url("slike/salon-proba.webp");
-    background-size: contain;
     height: 600px;
+}
+
+.slika3{
+    background-image: url("slike/model2.jpg");
+    background-size: cover;
+    float: center;
 }
