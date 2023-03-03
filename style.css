@@ -127,13 +127,10 @@ img
 .logo
 {
     position:fixed;
-    top:5px;
-    left: 5px;
+    top:15px;
+    left: 15px;
     float: left;
-}
-.ikona
-{
-    height: 80px;
+    z-index: 100;
 }
 
 
@@ -155,24 +152,24 @@ img
     background-color: rgb(84, 119, 185);
 }
 
-.ispod
-{
-    filter: blur(5px);
-    z-index: -1;
+.ispod{
+    position: absolute;
+    top:-2px;
+    left:-2px;
+    filter: blur(2px);
+    width: 102%;
+    height: 75.7%;
 }
 
 .iznad
 {
     position: absolute;
     display: block;
-    top:100px;
-    margin: auto;
-    display: block;
+    top:0px;
+    left:15%;
     margin-left: auto;
     margin-right: auto;
-    width: 40%;
-    /*
-    margin-left: 15%;*/
+    width: 70%;
 }
 
 .boja1{
@@ -195,5 +192,4 @@ img
 .slika3{
     background-image: url("slike/model2.jpg");
     background-size: cover;
-    float: center;
 }
