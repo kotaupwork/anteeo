@@ -5,28 +5,40 @@
     box-sizing: border-box;
 }
 
-h2{
-    text-align: center;
-    font-weight: bolder;
-    font-size: 60px;
-    color: mediumslateblue;
+@font-face {
+  font-family: Roboto;
+  src: url("fonts/Roboto-Bold.ttf");
 }
 
-img
-{
-    width: 100%;
-    text-align:center; 
-    display: inline-block;
-    white-space:nowrap;
-    background-size:cover;
-    background-repeat: no-repeat;
+/*
+@font-face {
+  font-family: TiltNeon;
+  src: url("fonts/TiltNeon-Regular.ttf");
+  font-size: larger;
+}*/
+
+
+h1{
+    text-align: left;
+    font-weight: bolder;
+    font-size: 60px;
+    color: lavender;
+}
+
+h2{
+    text-align: left;
+    font-weight: bolder;
+    font-size: 60px;
+    color: rgb(1, 61, 117);
+}
+a{
+    font-style: italic;
 }
 
 .menustrip
 {
-    background-color: #0a0e12;
+    background-image: linear-gradient(rgb(69, 163, 226), rgb(149, 173, 224));
     text-align: center;
-    border-bottom: 2px solid #fff;
     width: 100%;
     margin: 0 auto;
 }
@@ -55,30 +67,35 @@ img
 
 .menustrip ul li:hover
 {
-    background-color:rgb(86, 92, 92);
-    text-emphasis-color: black;
-    border-radius: 4px;
-}
-
-.submenu
-{
-    display: none;
-}
-
-.submenu ul li
-{
-    background-color: transparent;
+    background-image: linear-gradient(rgb(60, 146, 204), rgb(135, 158, 207));
+    border-radius: 6px;
 }
 
 .menustrip ul li:hover .submenu
 {
     display:block;
     position: absolute;
-    background-color: black;
+    background-image: linear-gradient(rgb(135, 158, 207), rgb(149, 173, 224));
 
     margin-top: 15px;
     margin-left: -15px;
 }
+
+.submenu
+{
+    display: none;
+    border-radius: 6px;
+}
+
+.submenu ul li
+{
+    background-color: transparent;
+}
+.submenu ul li:hover
+{
+    background-image: none;
+}
+
 
 .menustrip ul li:hover .submenu ul
 {
@@ -90,38 +107,23 @@ img
 {
     width: 180px;
     padding: 10px;
-    border-bottom: 1px dotted whitesmoke;
+    border-bottom: 2px dotted rgb(32, 59, 77);
     background-color: transparent;
     border-radius: 0;
     text-align: left;
 }
 
-
-
+.submenu ul li a:hover
+{
+    color: rgb(66, 96, 153);
+}
 
 .menustrip ul li:hover .submenu ul li:last-child
 {
     border-bottom: none;
 }
 
-.submenu1
-{
-    display: none;
-}
 
-.hoverme:hover .submenu1
-{
-    position: absolute;
-    display: block;
-    margin-top: -40px;
-    margin-left: 170px;
-    background-color: aqua;
-}
-
-.submenu1 ul li a:hover
-{
-    color: black;
-}
 
 
 .logo
@@ -130,16 +132,21 @@ img
     top:15px;
     left: 15px;
     float: left;
-    z-index: 100;
 }
-
+.ikona
+{
+    height: 80px;
+}
 
 .slikaDiv
 {
+    width: 100%;
+    text-align:center; 
+    display: inline-block;
     white-space:nowrap;
+    background-size:cover;
     background-repeat: no-repeat;
-    background-size: contain;
-} /* display: inline-block;  fali jer mi nije trebao*/
+}
 
 .pozadinaDiv
 {
@@ -149,34 +156,14 @@ img
     display: inline-block;
     white-space:nowrap;
     background-size:cover;
-    background-color: rgb(84, 119, 185);
-}
-
-.ispod{
-    position: absolute;
-    top:-2px;
-    left:-2px;
-    filter: blur(2px);
-    width: 102%;
-    height: 75.7%;
-}
-
-.iznad
-{
-    position: absolute;
-    display: block;
-    top:0px;
-    left:15%;
-    margin-left: auto;
-    margin-right: auto;
-    width: 70%;
+    background-color: rgb(149, 173, 224);
 }
 
 .boja1{
     background-color: cornflowerblue;
 }
 .boja2{
-    background-color: rgb(197, 115, 115);
+    background-color: rgb(149, 173, 224);
 }
 
 .slika1{
@@ -190,6 +177,6 @@ img
 }
 
 .slika3{
-    background-image: url("slike/model2.jpg");
+    background-image: url("slike/model2.png");
     background-size: cover;
 }
