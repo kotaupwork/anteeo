@@ -17,30 +17,60 @@
   font-size: larger;
 }*/
 
+body{
+    background-color: rgb(149, 173, 224);
+}
 
 h1{
-    text-align: left;
+    text-align: center;
     font-weight: bolder;
     font-size: 60px;
     color: lavender;
 }
 
 h2{
-    text-align: left;
+    text-align: center;
     font-weight: bolder;
     font-size: 60px;
-    color: rgb(1, 61, 117);
+    color: rgb(40, 59, 70);
+
+    position: relative;
+    top: 35%;
+    bottom: 15%;
+    margin-left: 120px;
+    margin-right: 120px;
 }
+
+h3{
+    text-align: left;
+    font-weight: bolder;
+    font-size: 25px;
+    color: lavender;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    
+}
+
+h4{
+    text-align: left;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 20px;
+    color: lavender;
+    margin-bottom: 20px;
+}
+
 a{
     font-style: italic;
 }
 
 .menustrip
 {
-    background-image: linear-gradient(rgb(69, 163, 226), rgb(149, 173, 224));
+    background-image: linear-gradient(rgb(110, 127, 165), rgb(149, 173, 224));
     text-align: center;
     width: 100%;
     margin: 0 auto;
+    padding-bottom: 20px;
 }
 
 .menustrip ul
@@ -62,12 +92,12 @@ a{
     color: rgb(255, 255, 255);
     text-decoration: none;
     font-weight: bolder;
-    font-size: 21px;    
+    font-size: 26px;    
 }
 
 .menustrip ul li:hover
 {
-    background-image: linear-gradient(rgb(60, 146, 204), rgb(135, 158, 207));
+    background-image: linear-gradient(rgb(110, 127, 165), rgb(135, 158, 207));
     border-radius: 6px;
 }
 
@@ -115,7 +145,7 @@ a{
 
 .submenu ul li a:hover
 {
-    color: rgb(66, 96, 153);
+    color: rgb(81, 94, 122);
 }
 
 .menustrip ul li:hover .submenu ul li:last-child
@@ -148,6 +178,22 @@ a{
     background-repeat: no-repeat;
 }
 
+.slikaDiv1
+{
+    width: 40%;
+    height: 70%;
+    position: relative;
+    top: 15%;
+    bottom: 15%;
+    margin-left: 120px;
+    margin-right: 120px;
+    
+    white-space:nowrap;
+    background-size:cover;
+}
+
+
+/*
 .pozadinaDiv
 {
     width: 100%;
@@ -156,7 +202,52 @@ a{
     display: inline-block;
     white-space:nowrap;
     background-size:cover;
-    background-color: rgb(149, 173, 224);
+}*/
+.malaPozadina
+{
+    width: 100%;
+    height: 800px;
+    text-align:center; 
+    display: inline-block;
+    white-space:nowrap;
+    background-size:cover;
+}
+
+.footerFiller{
+    height: 120px;
+    width: 100%; 
+    background-image: linear-gradient(rgb(149, 173, 224), rgb(129, 153, 204), rgb(55, 80, 114));
+}
+
+
+.footer
+{
+    background-color: rgb(55, 80, 114);
+    width: 100%;
+    text-align:center; 
+    display: inline-block;
+    white-space:nowrap;
+    background-size:cover;
+    padding-top: 30px;
+}
+
+.footerInfo
+{
+    display:inline-block;
+    width: 15%;
+    margin: 20px;
+}
+
+.kota{
+    text-align: right;
+    position: relative;
+    bottom: 10px;
+    right: 20px;
+    margin-right: 20px;
+    font-weight: bolder;
+    font-size: 20px;
+    font-style: italic;
+    color: lavender;
 }
 
 .boja1{
@@ -173,10 +264,8 @@ a{
 }
 .slika2{
     background-image: url("slike/salon-proba.webp");
-    height: 600px;
 }
 
 .slika3{
     background-image: url("slike/model2.png");
-    background-size: cover;
 }
