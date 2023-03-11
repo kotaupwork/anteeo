@@ -46,7 +46,7 @@ h3{
     font-size: 25px;
     color: lavender;
     margin-bottom: 10px;
-    margin-left: 10px;
+    margin-left: 15px;
     
 }
 
@@ -56,7 +56,9 @@ h4{
     font-style: italic;
     font-size: 20px;
     color: lavender;
+
     margin-bottom: 20px;
+    display: inline-flexbox;
 }
 
 p{
@@ -168,7 +170,10 @@ a{
 }
 .ikona
 {
-    height: 80px;
+    float: left;
+    width: 23px;
+    height: 23px;
+    margin-right: 8px;
 }
 
 .slikaDiv
@@ -219,11 +224,9 @@ a{
 
 .footer
 {
-    background-color: rgb(55, 80, 114);
     width: 100%;
     text-align:center; 
     display: inline-block;
-    white-space:nowrap;
     background-size:cover;
     padding-top: 30px;
 }
@@ -231,11 +234,18 @@ a{
 .footerInfo
 {
     display:inline-block;
-    width: 15%;
+    width: 25%;
     margin: 20px;
 }
 
-.kota{
+.footerLink
+{
+    color: rgb(179, 250, 255);
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+.madeBy{
     text-align: right;
     position: relative;
     bottom: 10px;
