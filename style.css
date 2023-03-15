@@ -293,6 +293,9 @@ a{
 .boja3{
     background-color: rgb(215, 160, 236);
 }
+    .boja3o{
+        background-color: rgb(215, 160, 236, 80%);
+    }
 .bojatekst1{
     color: rgb(27, 38, 39);
 }
